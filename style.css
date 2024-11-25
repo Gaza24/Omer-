@@ -1,0 +1,115 @@
+/* الأساسيات */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+    background: #000;
+    background: radial-gradient(circle, #000, #222);
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: glow 3s infinite alternate;
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b;
+    }
+    to {
+        text-shadow: 0 0 20px #ff4b2b, 0 0 30px #ff416c;
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.summary {
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.summary .icon {
+    font-size: 3rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.questions {
+    margin-top: 20px;
+}
+
+.questions h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff416c;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.quiz-item {
+    background: #222;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-item h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #ff416c;
+}
+
+.quiz-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.correct {
+    background: rgba(0, 255, 0, 0.2);
+}
+
+.incorrect {
+    background: rgba(255, 0, 0, 0.2);
+}
